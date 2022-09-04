@@ -30,6 +30,16 @@ nav ul li{
     padding: 0 12px;
 }
 
+nav ul a{
+    display: flex ;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
 .brand img{
     width: 64px;
 }
@@ -118,6 +128,11 @@ nav ul li{
     cursor: pointer;
 }
 
+#masterSongName{
+    display: flex;
+    flex-direction: column;
+}
+
 .songInfo{
     position: absolute;
     left: 10vw;
@@ -131,15 +146,37 @@ nav ul li{
     margin-right: 5px;
 }
 
-@media only screen and (width < 800) {
-    .songInfo{
-        width: fit-content;
-    }
-    #song_duration i{
-        width:fit-content;
-        font-size: 5vh;
-        
+
+
+
+@media screen and (max-width: 600px){
+
+    #song_duration{
+        display: flex;
+        flex-direction: row;
     }
 
     
+    .song_name{
+        display: flex;
+        flex-direction: row;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 700){
+    
+    .songInfo{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #masterSongName{
+        opacity: 0;
+    }
 }
