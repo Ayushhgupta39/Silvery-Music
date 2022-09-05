@@ -87,6 +87,7 @@ nav ul a{
 
 .icons i{
     cursor: pointer;
+    
 }
 
 .far{
@@ -162,9 +163,13 @@ nav ul a{
         flex-direction: row;
         font-size: .8rem;
     }
+
+    #masterSongName{
+        opacity: 0
+    }
 }
 
-@media screen and (max-width: 700){
+/* @media screen and (max-width: 700){
     
     .songInfo{
         display: flex;
@@ -179,4 +184,4 @@ nav ul a{
     #masterSongName{
         opacity: 0;
     }
-}
+} */
